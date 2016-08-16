@@ -9,6 +9,11 @@
   </head>
 
   <body>
+      <%= nav_bar brand: "Rails blog", brand_link: articles_path do %>
+        <% menu_group do %>
+            <%= menu_item "Articles", articles_path %>
+        <% end %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
