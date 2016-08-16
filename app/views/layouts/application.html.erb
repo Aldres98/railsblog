@@ -12,8 +12,18 @@
       <%= nav_bar brand: "Rails blog", brand_link: articles_path do %>
         <% menu_group do %>
             <%= menu_item "Articles", articles_path %>
+            <%= menu_item "Contact us", contacts_path %>
+            <%= menu_item "New article", new_article_path %>
+
+
         <% end %>
     <% end %>
-    <%= yield %>
+
+            <div>
+                  <%if @error && @error.length > 0 then %>
+                      <div class="alert alert-danger"><%=@error%></div>
+                  <% end %>
+                  <%= yield %>
+            </div>
   </body>
 </html>

@@ -1,6 +1,6 @@
     <h1> Contact us </h1>
 
-    <%= form_for :contact, url: contacts_path do |f| %>
+    <%= bootstrap_form_for :contact, url: contacts_path do |f| %>
 
     <% if @contact && @contact.errors.any? %>
 
@@ -14,12 +14,10 @@
     <% end %>
 
     <p>
-        <%= f.label :email %> <br />
         <%= f.text_field :email %>
     </p>
 
     <p>
-        <%= f.label :message %><br />
         <%= f.text_area :message %>
 
     </p>
@@ -30,4 +28,3 @@
 
 <% end %>
 
-I have big experience with PHP+CSS3+HTML5+JS, so I can do this really fast :)
