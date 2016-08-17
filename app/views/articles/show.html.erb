@@ -3,9 +3,9 @@
         <%= @article.text %>
         <hr />
     </p>
-
+    <h2> Comments </h2>
     <% @article.comments.each do |comment| %>
-    <p> By: <%= comment.author %> </p>
+    <i> By: <%= comment.author %> </i> <br />
     <p><%= comment.body %></p> 
 
 
@@ -13,6 +13,8 @@
     
     <% end %>
 
+
+    <h2> Add comment </h2>
     <p>
     <%= bootstrap_form_for([@article, @article.comments.build]) do |f| %>
 
