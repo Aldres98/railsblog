@@ -9,6 +9,8 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
       <%= nav_bar brand: "Rails blog", brand_link: articles_path do %>
         <% menu_group do %>
             <%= menu_item "Articles", articles_path %>

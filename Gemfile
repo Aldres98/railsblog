@@ -20,6 +20,8 @@ gem "twitter-bootstrap-rails"
 
 gem 'bootstrap_form'
 
+gem 'devise'
+
 
 
 
