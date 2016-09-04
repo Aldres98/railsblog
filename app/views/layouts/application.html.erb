@@ -14,10 +14,10 @@
             <%= menu_item "Articles", articles_path %>
             <%= menu_item "Contact us", contacts_path %>
             <%= menu_item "New article", new_article_path %>
-
-
         <% end %>
     <% end %>
+    <a href="/users/sign_out" data-method="delete">Sign out|</a>
+    <a href="/users/sign_in">Sign in</a>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
