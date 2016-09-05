@@ -22,6 +22,7 @@ gem 'bootstrap_form'
 
 gem 'devise'
 
+gem 'phaser-rails'
 
 
 
