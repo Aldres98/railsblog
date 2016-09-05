@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'terms' => 'pages#terms'
   get 'about' => 'pages#about'
+  get 'phaser' => 'pages#phaser'
 
 
   resource :contacts, only: [:new, :create], path_names: { :new => '' }
