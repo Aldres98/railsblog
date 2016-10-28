@@ -27,3 +27,16 @@
     border-color: red;
     
  }
+
+ .notice {
+
+    display: none
+
+
+ }
+
+ .alert {
+
+    display: none
+ }
+
